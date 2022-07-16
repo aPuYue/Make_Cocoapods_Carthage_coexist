@@ -3,3 +3,5 @@
 
 参考
 https://qiita.com/yukin01/items/9d72154aead54bfd98cc
+
+从此打开workspace文件
