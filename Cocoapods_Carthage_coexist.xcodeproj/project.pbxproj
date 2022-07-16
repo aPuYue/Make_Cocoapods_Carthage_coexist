@@ -14,10 +14,27 @@
 		B45B6F1328829EE200473EE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45B6F1128829EE200473EE6 /* Main.storyboard */; };
 		B45B6F1528829EE200473EE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45B6F1428829EE200473EE6 /* Assets.xcassets */; };
 		B45B6F1828829EE200473EE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45B6F1628829EE200473EE6 /* LaunchScreen.storyboard */; };
+		B468D9AC2882AAEB00DA3C5E /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B44E5C262882A7DB0019716F /* Alamofire.xcframework */; };
+		B468D9AD2882AAEB00DA3C5E /* Alamofire.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B44E5C262882A7DB0019716F /* Alamofire.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B468D9AE2882AAEB00DA3C5E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B468D9AD2882AAEB00DA3C5E /* Alamofire.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A2459724A4BB8CFE823822D2 /* Pods-Cocoapods_Carthage_coexist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cocoapods_Carthage_coexist.debug.xcconfig"; path = "Target Support Files/Pods-Cocoapods_Carthage_coexist/Pods-Cocoapods_Carthage_coexist.debug.xcconfig"; sourceTree = "<group>"; };
+		B44E5C262882A7DB0019716F /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
 		B45B6F0828829EE200473EE6 /* Cocoapods_Carthage_coexist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cocoapods_Carthage_coexist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45B6F0B28829EE200473EE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B45B6F0D28829EE200473EE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B468D9AC2882AAEB00DA3C5E /* Alamofire.xcframework in Frameworks */,
 				7C787D909110EC70D05FD076 /* Pods_Cocoapods_Carthage_coexist.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,13 +66,13 @@
 				A2459724A4BB8CFE823822D2 /* Pods-Cocoapods_Carthage_coexist.debug.xcconfig */,
 				C400EEE47E9F76924DFF85D1 /* Pods-Cocoapods_Carthage_coexist.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		4D570F281F39E1DED9C9330F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B44E5C262882A7DB0019716F /* Alamofire.xcframework */,
 				CFF238FB6E3D419838495E55 /* Pods_Cocoapods_Carthage_coexist.framework */,
 			);
 			name = Frameworks;
@@ -104,6 +122,7 @@
 				B45B6F0528829EE200473EE6 /* Frameworks */,
 				B45B6F0628829EE200473EE6 /* Resources */,
 				EE5ED4CA887E5E82EF41BC79 /* [CP] Embed Pods Frameworks */,
+				B468D9AE2882AAEB00DA3C5E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
